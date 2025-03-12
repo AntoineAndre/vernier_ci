@@ -73,7 +73,7 @@ $(function() {
   <div class="headertitle"><div class="title">Vernier Library </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2vernier__ci_2vernier__ci_2_r_e_a_d_m_e"></a> <a href="https://projects.femto-st.fr/vernier/en"><img src="https://img.shields.io/badge/info-on_website-purple.svg" alt="Information" style="pointer-events: none;" class="inline"/></a> <a href="https://vernierlib.github.io/"><img src="https://img.shields.io/badge/doc-on_website-blue.svg" alt="Documentation" style="pointer-events: none;" class="inline"/></a> <a href="https://projects.femto-st.fr/vernier/en/contact"><img src="https://img.shields.io/badge/contact-form-green.svg" alt="Contact" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/vernierlib"><img src="https://img.shields.io/badge/sources-on_github-orange.svg" alt="GithHb" style="pointer-events: none;" class="inline"/></a> <img src="https://img.shields.io/github/actions/workflow/status/AntoineAndre/vernier_ci/CI%20of%20Vernier" alt="Build" class="inline"/></p>
+<div class="textblock"><p><a class="anchor" id="md__2home_2runner_2work_2vernier__ci_2vernier__ci_2_r_e_a_d_m_e"></a> <a href="https://projects.femto-st.fr/vernier/en"><img src="https://img.shields.io/badge/info-on_website-purple.svg" alt="Information" style="pointer-events: none;" class="inline"/></a> <a href="https://vernierlib.github.io/"><img src="https://img.shields.io/badge/doc-on_website-blue.svg" alt="Documentation" style="pointer-events: none;" class="inline"/></a> <a href="https://projects.femto-st.fr/vernier/en/contact"><img src="https://img.shields.io/badge/contact-form-green.svg" alt="Contact" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/vernierlib"><img src="https://img.shields.io/badge/sources-on_github-orange.svg" alt="GithHb" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/AntoineAndre/vernier_ci/actions/workflows/build.yml"><img src="https://github.com/AntoineAndre/vernier_ci/actions/workflows/build.yml/badge.svg" alt="Build" style="pointer-events: none;" class="inline"/></a></p>
 <p>The Vernier Library is an open-source C++ library for pose measurement of calibrated patterns with subpixel resolutions.</p>
 <p>The library gathers a collection of classes for detection and rendering different kind of calibrated patterns (periodic patterns, megarena patterns, QR-code-like and bitmap patterns).</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
@@ -85,6 +85,7 @@ Compatibility</h1>
 <ul>
 <li>Visual C++ 2019/2022 on Windows (64-bit)</li>
 <li>Clang 14.0 on Mac OS X (64-bit)</li>
+<li>gcc 11.4 on Ubuntu 22.04 (64-bit)</li>
 </ul>
 <p>Users can build and run the unit tests on their platform/compiler.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
@@ -114,23 +115,32 @@ Windows instructions</h2>
 <p>Alternatively, you can use VS Code.</p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Linux instructions</h2>
-<p>With Linux, some dependencies must be installed first using apt-get: </p><pre class="fragment">&gt; sudo apt-get install cmake eigen libtool libmatio
-</pre><p> Then, you may install OpenCV (optionnal but higly recommanded for GUI and image file management): </p><pre class="fragment">&gt; sudo apt-get install opencv
-</pre><p> Optionnally you may install FFTW (recommanded for speed): </p><pre class="fragment">&gt; sudo apt-get install fftw
-</pre><p> Finally, open a terminal and go to the directory of the package </p><pre class="fragment">&gt; mkdir build
-&gt; cd build
-&gt; cmake ..
-&gt; make
-</pre> <h2><a class="anchor" id="autotoc_md6"></a>
+<p>With Linux, some dependencies must be installed first using apt-get:</p>
+<div class="fragment"><div class="line">sudo apt-get install cmake eigen libtool libmatio</div>
+</div><!-- fragment --><p> Then, you may install OpenCV (optionnal but higly recommanded for GUI and image file management):</p>
+<div class="fragment"><div class="line">&gt; sudo apt-get install libopencv-dev</div>
+</div><!-- fragment --><p>We recommend to compile opencv from sources to ensure using the right version (4.6 and higher).</p>
+<p>Optionnally you may install FFTW (recommanded for speed):</p>
+<div class="fragment"><div class="line">&gt; sudo apt-get install fftw</div>
+</div><!-- fragment --><p>Finally, open a terminal and go to the directory of the package</p>
+<div class="fragment"><div class="line">&gt; mkdir build</div>
+<div class="line">&gt; cd build</div>
+<div class="line">&gt; cmake ..</div>
+<div class="line">&gt; make</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 OSX instructions</h2>
-<p>With OSX, some dependencies must be installed first using homebrew: </p><pre class="fragment">% brew install autoconfig automake cmake eigen libtool libmatio
-</pre><p> Then, you may install OpenCV (optionnal but higly recommanded for GUI and image file management): </p><pre class="fragment">% brew install opencv
-</pre><p> Optionnally you may install FFTW (recommanded for speed): </p><pre class="fragment">% brew install fftw
-</pre><p> Finally, open a terminal and go to the directory of the package </p><pre class="fragment">% mkdir build
-% cd build
-% cmake ..
-% make
-</pre> <h1><a class="anchor" id="autotoc_md7"></a>
+<p>With OSX, some dependencies must be installed first using homebrew:</p>
+<div class="fragment"><div class="line">% brew install autoconfig automake cmake eigen libtool libmatio</div>
+</div><!-- fragment --><p>Then, you may install OpenCV (optionnal but higly recommanded for GUI and image file management):</p>
+<div class="fragment"><div class="line">% brew install opencv</div>
+</div><!-- fragment --><p>Optionnally you may install FFTW (recommanded for speed):</p>
+<div class="fragment"><div class="line">% brew install fftw</div>
+</div><!-- fragment --><p>Finally, open a terminal and go to the directory of the package</p>
+<div class="fragment"><div class="line">% mkdir build</div>
+<div class="line">% cd build</div>
+<div class="line">% cmake ..</div>
+<div class="line">% make</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
 Getting started</h1>
 <p>Run one of the demo files from the <a href="https://vernierlib.github.io/examples.html">examples page</a></p>
 <h1><a class="anchor" id="autotoc_md8"></a>
