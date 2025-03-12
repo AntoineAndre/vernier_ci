@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['rectangle_0',['Rectangle',['../classvernier_1_1_rectangle.html',1,'vernier']]],
+  ['regressionplane_1',['regressionplane',['../classvernier_1_1_regression_plane.html',1,'vernier::RegressionPlane'],['../classvernier_1_1_regression_plane.html#a6015699fcf83fd06da381a8bc91c1bef',1,'vernier::RegressionPlane::RegressionPlane()'],['../classvernier_1_1_regression_plane.html#a6ee1a208eab8b65a5e5c0c86a20df237',1,'vernier::RegressionPlane::RegressionPlane(double cropFactor)']]],
+  ['release_2',['release',['../classvernier_1_1_buffered_reader.html#a2638f49483cdd5683e2c1b9fe999e301',1,'vernier::BufferedReader']]],
+  ['renderorthographicprojection_3',['renderOrthographicProjection',['../classvernier_1_1_pattern_layout.html#a456a6a1e3944ce40afbec8de5973a144',1,'vernier::PatternLayout']]],
+  ['renderperspectiveprojection_4',['renderPerspectiveProjection',['../classvernier_1_1_pattern_layout.html#a47f709128ca50aecb19ba6382fe0da90',1,'vernier::PatternLayout']]],
+  ['resize_5',['resize',['../classvernier_1_1_fourier_transform.html#a5474994389c3e760b62bfea7a9c9aed1',1,'vernier::FourierTransform::resize()'],['../classvernier_1_1_h_p_code_pattern_detector.html#ae1176fef826aa37ccc00c23e8d20f739',1,'vernier::HPCodePatternDetector::resize()'],['../classvernier_1_1_megarena_absolute_decoding.html#a36c9d355b1370ec61fbd5da90a99e54f',1,'vernier::MegarenaAbsoluteDecoding::resize()'],['../classvernier_1_1_megarena_thumbnail.html#a6733057475ea85b61984c76dfa25760a',1,'vernier::MegarenaThumbnail::resize()'],['../classvernier_1_1_pattern_phase.html#a92e4b10f39a464cb9ac72fec62122206',1,'vernier::PatternPhase::resize()'],['../classvernier_1_1_regression_plane.html#a440daaa1b56b96b82f871d7ba291b453',1,'vernier::RegressionPlane::resize()'],['../classvernier_1_1_stamp_pattern_detector.html#a56ae4de7c1005b5c5d8bb9ef46e18f73',1,'vernier::StampPatternDetector::resize()']]]
+];
